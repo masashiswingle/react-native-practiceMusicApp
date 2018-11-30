@@ -4,7 +4,7 @@ import Header from './src/components/header';
 
 const App = () => { //Crate a component 
 	return (
-		<Header />		
+		<Header headerText={"Albums"}/>		
 	);
 };
 AppRegistry.registerComponent('practiceApp', () => App);
