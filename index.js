@@ -1,3 +1,15 @@
+import React from 'react';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header';
+
+const App = () => { //Crate a component 
+	return (
+		<Header />		
+	);
+};
+AppRegistry.registerComponent('practiceApp', () => App);
+//Render Component to device  
+
 // /** @format */
 
 // import {AppRegistry} from 'react-native';
@@ -8,14 +20,3 @@
 
 
 // Import a library to help create component
-
-import React from 'react';
-import {Text, AppRegistry} from 'react-native';
-
-const App = () => { //Crate a component 
-	return (
-		<Text> Some Text </Text>
-	)
-}
-AppRegistry.registerComponent('practiceApp', () => App)
-//Render Component to device  
