@@ -1,12 +1,15 @@
 import React from 'react';
-import { AppRegistry } from 'react-native';
-import Header from './src/components/header';
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
+//const dataUrl = "https://rallycoding.herokuapp.com/api/music_albums"
 
-const App = () => { //Crate a component 
-	return (
-		<Header headerText={"Albums"}/>		
-	);
-};
+const App = () => ( //Crate a component 
+	<View>
+		<Header headerText={"Albums"} />		
+		<AlbumList />
+	</View>
+);
 AppRegistry.registerComponent('practiceApp', () => App);
 //Render Component to device  
 
