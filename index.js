@@ -2,11 +2,10 @@ import React from 'react';
 import { AppRegistry, View } from 'react-native';
 import Header from './src/components/Header';
 import AlbumList from './src/components/AlbumList';
-//const dataUrl = "https://rallycoding.herokuapp.com/api/music_albums"
 
 const App = () => ( //Crate a component 
-	<View>
-		<Header headerText={"Albums"} />		
+	<View style={{ flex: 1}}>
+		<Header headerText={'Albums'} />		
 		<AlbumList />
 	</View>
 );
